@@ -9,7 +9,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <style rel="stylesheet" href="./src/style.css"></style>
+    <link rel="stylesheet" href="./src/style.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Vanilla Weather App</title>
   </head>
@@ -26,14 +26,13 @@
           </div>
           <div class="row">
             <div class="col-6">
-              <div class="clearfix weather-temperature">
+              <div class="d-flex weather-temperature">
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                   alt="Clear"
                   id="icon"
-                  class="float-left"
                 />
-                <div class="float-left">
+                <div class="container-left">
                   <strong id="temperature">12</strong
                   ><span class="units"> °C</span>
                 </div>
@@ -46,15 +45,15 @@
               </ul>
             </div>
           </div>
+          <small>
+            <a
+              href="https://github.com/vness-kraemer/vanilla-weather-app"
+              target="_blank"
+              >Open-source code</a
+            >
+            by Vanessa Krämer
+          </small>
         </div>
-        <small>
-          <a
-            href="https://github.com/vness-kraemer/vanilla-weather-app"
-            target="_blank"
-            >Open-source code</a
-          >
-          by Vanessa Krämer
-        </small>
       </div>
     </div>
     <script src="./src/app.js"></script>
