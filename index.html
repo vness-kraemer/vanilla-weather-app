@@ -9,6 +9,12 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/style.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Vanilla Weather App</title>
@@ -17,7 +23,8 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <form id="search-form" class="mb-3">
+          <div class="search-panel">
+          <form id="search-form" class="m-3">
             <div class="row">
               <div class="col-9">
                 <input
@@ -32,8 +39,9 @@
                 <input
                   type="submit"
                   value="Search"
-                  class="btn btn-primary w-100"
+                  class="btn btn-primary"
                 />
+                </div>
               </div>
             </div>
           </form>
@@ -64,7 +72,7 @@
           <!-- Here starts the forecast section -->
           <div class="weather-forecast" id="forecast"></div>
         </div>
-        <small>
+        <small class="linkGitHub">
           <a
             href="https://github.com/vness-kraemer/vanilla-weather-app"
             target="_blank"
