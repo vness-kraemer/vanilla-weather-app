@@ -48,6 +48,8 @@ function search(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   console.log(apiUrl);
   axios.get(apiUrl).then(displayTemperature);
+
+  clearInput();
 }
 
 function handleSubmit(event) {
@@ -59,3 +61,8 @@ function handleSubmit(event) {
 search("Milan");
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+function clearInput() {
+  // Delete text after submitting
+  document.querySelector("#city-input").value = "";
+}
