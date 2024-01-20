@@ -9,7 +9,7 @@ My project "Vanilla Weather App" includes a vanilla JS Code with an implementati
 ## Link
 
 Visit the countdown app
-[countdown-app](https://heartfelt-dango-07ad0c.netlify.app/)
+[vanilla-weather-app](https://heartfelt-dango-07ad0c.netlify.app/)
 
 ## Code Snippet
 
